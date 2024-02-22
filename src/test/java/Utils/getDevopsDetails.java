@@ -9,7 +9,7 @@ import java.util.Random;
 public class getDevopsDetails {
 
 //	String token = "synv7lcaodb2f54ygy6ov7ea45i5vmddzme5q7jzfhnspcbot6fq";
-	String token="sztxs43b7gumd42u67vjlwwxhhtqoufuqns4tyyaf6sqdtjtqyla";
+	String token="rwiwh7wuuz5aotlgaim7a2os2eqqqgs573copqwmtpxd7cusklmq";
 
 	public static String getEnvVarible(String variableName) throws IOException {
 		FileInputStream stream = new FileInputStream(
