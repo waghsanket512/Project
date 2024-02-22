@@ -4,10 +4,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Base64;
 import java.util.Properties;
+import java.util.Random;
 
 public class getDevopsDetails {
 
-	String token = "synv7lcaodb2f54ygy6ov7ea45i5vmddzme5q7jzfhnspcbot6fq";
+//	String token = "synv7lcaodb2f54ygy6ov7ea45i5vmddzme5q7jzfhnspcbot6fq";
+	String token="sztxs43b7gumd42u67vjlwwxhhtqoufuqns4tyyaf6sqdtjtqyla";
 
 	public static String getEnvVarible(String variableName) throws IOException {
 		FileInputStream stream = new FileInputStream(
@@ -32,4 +34,16 @@ public class getDevopsDetails {
 		return orgName;
 	}
 
+	public static String generateRandomString(int length) {
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder randomString = new StringBuilder();
+
+        Random random = new Random();
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(characters.length());
+            randomString.append(characters.charAt(index));
+        }
+
+        return randomString.toString();
+    }
 }

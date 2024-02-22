@@ -3,12 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Azure.Project.GetListOfProject">
+      <class name="Azure.Project.DeleteProject">
         <methods>
-          <include name="getProjectList"/>
-          <include name="getData"/>
+          <include name="deleteProject"/>
+          <include name="getProjectIdFromName"/>
         </methods>
-      </class> <!-- Azure.Project.GetListOfProject -->
+      </class> <!-- Azure.Project.DeleteProject -->
+      <class name="Azure.Project.CreateProject">
+        <methods>
+          <include name="createProject"/>
+        </methods>
+      </class> <!-- Azure.Project.CreateProject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
