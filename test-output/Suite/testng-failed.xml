@@ -3,16 +3,27 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Azure.Project.DeleteProject">
+      <class name="Azure.Project.GetListOfProject">
         <methods>
-          <include name="deleteProject"/>
+          <include name="getProjectList"/>
+          <include name="getData"/>
         </methods>
-      </class> <!-- Azure.Project.DeleteProject -->
+      </class> <!-- Azure.Project.GetListOfProject -->
+      <class name="Azure.Project.GetProject">
+        <methods>
+          <include name="getProject"/>
+        </methods>
+      </class> <!-- Azure.Project.GetProject -->
       <class name="Azure.Project.CreateProject">
         <methods>
           <include name="createProject"/>
         </methods>
       </class> <!-- Azure.Project.CreateProject -->
+      <class name="Azure.Project.GetProjectProperties">
+        <methods>
+          <include name="GetProjectProperties"/>
+        </methods>
+      </class> <!-- Azure.Project.GetProjectProperties -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
